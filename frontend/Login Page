@@ -1,0 +1,73 @@
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+
+const Login = ({ navigation }) => {
+  const [studentId, setStudentId] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    // Authentication logic here
+    navigation.navigate('QuizEntry');
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Login</Text>
+      
+      <TextInput
+        style={styles.input}
+        placeholder="Student ID"
+        value={studentId}
+        onChangeText={setStudentId}
+      />
+      
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        secureTextEntry
+        value={password}
+        onChangeText={setPassword}
+      />
+      
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <Text style={styles.buttonText}>Login</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 20,
+    backgroundColor: '#f5f5f5'
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 30,
+    textAlign: 'center'
+  },
+  input: {
+    height: 50,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 15,
+    marginBottom: 15,
+    backgroundColor: '#fff'
+  },
+  button: {
+    backgroundColor: '#2E5AAC',
+    padding: 15,
+    borderRadius: 5,
+    alignItems: 'center'
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold'
+  }
+});
+
+export default Login;
