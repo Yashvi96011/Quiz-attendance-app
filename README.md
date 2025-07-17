@@ -38,14 +38,6 @@ A React-based quiz-driven attendance app that uses GPS verification and session 
 - LocalStorage / Firebase
 - Git & GitHub
 
----
 
-## 🚀 How to Run the Project
-
-```bash
-git clone https://github.com/YOUR_USERNAME/quiz-attendance-app.git
-cd quiz-attendance-app
-npm install
-npm start
 
 
