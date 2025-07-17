@@ -15,7 +15,17 @@ This system streamlines classroom attendance using a combination of:
 This app was developed as part of the SSIP 2025 project to help colleges improve attendance tracking digitally.
 
 ---
+## 📸 Screenshots
 
+| Login Page | Quiz Entry |
+|------------|------------|
+| ![](<img width="512" height="384" alt="Image" src="https://github.com/user-attachments/assets/eac6553f-5f98-42bb-aacb-506a6c333bed" />) | ![](assets/2-quiz-entry.png) |
+
+| Quiz Interface | Submission Page |
+|----------------|------------------|
+| ![](assets/3-quiz.png) | ![](assets/4-submit.png) |
+
+---
 
 
 ## 💡 Technologies Used
